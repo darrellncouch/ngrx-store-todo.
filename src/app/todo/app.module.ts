@@ -4,14 +4,14 @@ import { EffectsModule } from "@ngrx/effects";
 import { FormsModule } from "@angular/forms";
 
 import { StoreModule } from "@ngrx/store";
-import { todoReducer } from "./reducers/todos.reducer";
+import { todoReducer } from "../store/reducers/todos.reducer";
 
 
 import { AppComponent } from './app.component';
-import { TodoListComponent } from './todo-list/todo-list.component';
-import { AddTodoComponent } from './add-todo/add-todo.component';
-import { TodoEffects } from './effects/todo.effects';
-import { TodoService } from './services/todo.service';
+import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { AddTodoComponent } from './components/add-todo/add-todo.component';
+import { TodoEffects } from '../store/effects/todo.effects';
+import { TodoService } from '../store/services/todo.service';
 
 
 @NgModule({

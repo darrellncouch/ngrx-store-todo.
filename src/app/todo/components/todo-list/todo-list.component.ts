@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from "rxjs/Observable";
 import { AsyncPipe } from '@angular/common';
 
-import { AppComponent } from "../app.component";
+import { AppComponent } from "../../app.component";
 import { Store } from '@ngrx/store';
-import { AppState } from "../../Interfaces/AppState";
-import * as todoActions from "../actions/todos.action";
+import { AppState } from "../../../../Interfaces/AppState";
+import * as todoActions from "../../../store/actions/todos.action";
 
 @Component({
   selector: 'app-todo-list',

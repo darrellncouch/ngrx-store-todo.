@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from "rxjs/Observable";
 import { Store } from '@ngrx/store';
-import { AppState } from "../Interfaces/AppState";
-import * as todoActions from "./actions/todos.action";
+import { AppState } from "../../Interfaces/AppState";
+import * as todoActions from "../store/actions/todos.action";
 
 
 @Component({
