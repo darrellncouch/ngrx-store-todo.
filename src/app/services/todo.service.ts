@@ -41,5 +41,16 @@ export class TodoService {
         return of(this.todoDB);
     }
 
+    addTodo(input: string): Observable<ITodoItem[]> {
+        this.todoDB.push(
+            {
+                id: this.todoDB.length + 1,
+                isCompleted: false,
+                task: input
+            }
+        );
+        return of(this.todoDB);
+    }
+
 }
 

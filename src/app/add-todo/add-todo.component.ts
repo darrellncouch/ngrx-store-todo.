@@ -19,8 +19,11 @@ export class AddTodoComponent implements OnInit {
   ngOnInit() {
   }
 
-  addItem(input: string): void {
-    this.store.dispatch( new todoActions.AddNewTodo(input))
+  inputValue: string;
+
+  addItem(): void {
+    this.store.dispatch( new todoActions.AddNewTodoAction(this.inputValue))
+    this.inputValue = "";
   }
 
 }

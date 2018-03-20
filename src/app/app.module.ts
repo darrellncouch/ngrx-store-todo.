@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { EffectsModule } from "@ngrx/effects";
+import { FormsModule } from "@angular/forms";
 
 import { StoreModule } from "@ngrx/store";
 import { todoReducer } from "./reducers/todos.reducer";
@@ -21,6 +22,7 @@ import { TodoService } from './services/todo.service';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     //this needs to be below router
     StoreModule.forRoot({ 
       todos: todoReducer

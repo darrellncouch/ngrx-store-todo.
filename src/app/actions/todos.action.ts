@@ -27,7 +27,7 @@ export class DeleteItemSuccessAction {
 
 export class AddNewTodoAction {
   readonly type = ADD_ITEM_PENDING;
-  constructor(public payload: stirng) {}
+  constructor(public payload: string) {}
 }
 
 export class AddNewTodoSuccessAction {
