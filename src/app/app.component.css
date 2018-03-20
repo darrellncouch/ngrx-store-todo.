@@ -1,0 +1,21 @@
+.content {
+  background-color: #03aadf;
+  min-height: 100vh;
+}
+
+h1 {
+  margin: 0;
+  padding: .5em 0;
+  color: rgb(60, 60, 60);
+  font-weight: 100;
+  text-align: center;
+  background-color:  rgb(60, 106, 244);
+  position: relative;
+}
+
+.img {
+  height: 1.5em;
+  position: absolute;
+  top: 15%;
+  left: 1%;
+}
