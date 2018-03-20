@@ -1,4 +1,4 @@
-export const todoDB: ITodoItem[] = [
+export let todoDB: ITodoItem[] = [
     {
         id: 1,
         isCompleted: false,

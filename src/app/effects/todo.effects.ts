@@ -22,7 +22,7 @@ export class TodoEffects {
     @Effect() deleteTodo$ = this.actions$
         .ofType(todoActions.DELETE_ITEM_PENDING)
         .switchMap(action => this.todoService.deleteTodo(action.payload))
-        .map(todo => (new todoActions.DELETE_ITEM_SUCCESS(todo.id)))
+        .map(todo => new todoActions.DeleteItemSuccessAction(todo))
 
 
 }

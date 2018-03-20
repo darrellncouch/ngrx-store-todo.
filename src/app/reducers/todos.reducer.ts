@@ -8,7 +8,11 @@ export function todoReducer(state = [], action: todoActions.Action) {
             return action.payload;
 
         case todoActions.DELETE_ITEM_SUCCESS:
-            return state.filter(todo => todo.id !== action.payload);
+            console.log("current state :", action.payload);
+            return action.payload;
+
+        case todoActions.ADD_ITEM_SUCCESS:
+            
 
         default:
             return state;
